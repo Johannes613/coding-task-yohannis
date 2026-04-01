@@ -13,13 +13,13 @@ class ProductCard extends StatelessWidget {
     return GestureDetector(
       onTap: () => _navigateToDetail(context),
       child: Container(
-        margin: const EdgeInsets.only(bottom: 12),
         decoration: BoxDecoration(
           color: const Color(0xFFFFFFFF),
           borderRadius: BorderRadius.circular(18),
           border: Border.all(color: const Color(0xFFE5E5EA)),
         ),
-        child: Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _buildThumbnail(),
             Expanded(child: _buildInfo()),
@@ -41,11 +41,10 @@ class ProductCard extends StatelessWidget {
     return ClipRRect(
       borderRadius: const BorderRadius.only(
         topLeft: Radius.circular(18),
-        bottomLeft: Radius.circular(18),
+        topRight: Radius.circular(18),
       ),
-      child: SizedBox(
-        width: 100,
-        height: 100,
+      child: AspectRatio(
+        aspectRatio: 1.0,
         child: Stack(
           fit: StackFit.expand,
           children: [
@@ -98,8 +97,12 @@ class ProductCard extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 6),
-          Row(
+          const Spacer(),
+          Wrap(
+            alignment: WrapAlignment.start,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 6,
+            runSpacing: 4,
             children: [
               Text(
                 '\$${product.discountedPrice.toStringAsFixed(2)}',
@@ -109,8 +112,7 @@ class ProductCard extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              if (product.hasDiscount) ...[
-                const SizedBox(width: 6),
+              if (product.hasDiscount)
                 Text(
                   '\$${product.price.toStringAsFixed(2)}',
                   style: const TextStyle(
@@ -119,11 +121,10 @@ class ProductCard extends StatelessWidget {
                     decoration: TextDecoration.lineThrough,
                   ),
                 ),
-              ],
-              const Spacer(),
-              _StockBadge(product: product),
             ],
           ),
+          const SizedBox(height: 6),
+          _StockBadge(product: product),
         ],
       ),
     );

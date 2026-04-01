@@ -120,8 +120,14 @@ class _ProductListScreenState extends State<ProductListScreen> {
       color: const Color(0xFF5E5CE6),
       backgroundColor: const Color(0xFFFFFFFF),
       onRefresh: () async => _refresh(),
-      child: ListView.builder(
+      child: GridView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          mainAxisSpacing: 12,
+          crossAxisSpacing: 12,
+          childAspectRatio: 0.55,
+        ),
         itemCount: filtered.length,
         itemBuilder: (_, i) => ProductCard(product: filtered[i]),
       ),
