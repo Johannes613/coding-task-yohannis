@@ -1,20 +1,12 @@
-# 🌍 Explore
+# Explore
 
 A modern, beautifully designed product catalog application built with Flutter. **Explore** demonstrates clean UI design principles with a modular architecture, dynamic search functionality, and intricate product detail views.
 
-## ✨ Features
+<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/c2e69a38-8829-4da6-b3fa-fad6a678e264" />
+<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/ddaf1324-6fec-4e33-a73b-dc7f4efd2ff0" />
+<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/4fcaee25-6d15-47b1-8f69-16112c242e09" />
 
-- **Product Listing:** A clean layout displaying products fetched dynamically from an external API (`dummyjson.com/products`).
-- **Dynamic Search:** Instantly interact with the catalog by filtering products by title or brand using a sleek, integrated search bar.
-- **Detailed Product Views:** 
-  - Swipeable image galleries showcasing diverse product shots.
-  - Granular pricing information including clear and visual discount markers.
-  - Detailed grids illustrating product stock levels, shipping terms, and return policies.
-  - Full review cards displaying customer feedback and sentiment.
-- **State-of-the-Art Aesthetics:** Carefully crafted typography, dynamic micro-animations, and integrated components styled directly in-place without the need for external theme constants.
-- **Robust Architecture:** Strict decoupling into `api_client`, services, immutable models, robust screens, and modular widgets ensures elite testability and simplified maintenance.
-
-## 🗂️ Project Structure
+## Project Structure
 
 The underlying source code is flat and highly organized under the `lib/` directory:
 
@@ -23,7 +15,7 @@ The underlying source code is flat and highly organized under the `lib/` directo
 - `screens/` - Complete UI navigations (`product_list_screen.dart`, `product_detail_screen.dart`).
 - `widgets/` - Reusable layout tools (`product_card.dart`, `search_bar_field.dart`, `review_tile.dart`, `info_grid.dart`).
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Flutter SDK](https://docs.flutter.dev/get-started/install) installed and properly configured.
@@ -47,16 +39,3 @@ The underlying source code is flat and highly organized under the `lib/` directo
    flutter run
    ```
 
-## 🧪 Testing
-
-The app comes bundled with unit and widget tests to guarantee reliability. 
-
-```bash
-flutter test
-```
-
-## 🛠️ Technology Stack
-
-- **Framework:** Flutter (Dart)
-- **Data Provider:** [DummyJSON](https://dummyjson.com/) 
-- **Networking:** Native Dart `http` package
