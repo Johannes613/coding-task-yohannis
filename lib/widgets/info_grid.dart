@@ -10,10 +10,9 @@ class InfoGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = <(String, String)>[
-      ('📦 Stock', '${product.stock} units'),
-      ('🚚 Shipping', product.shippingInformation),
-      ('↩️ Returns', product.returnPolicy),
-
+      ('Stock', '${product.stock} units'),
+      ('Shipping', product.shippingInformation),
+      ('Returns', product.returnPolicy),
     ];
 
     return GridView.count(
@@ -49,10 +48,7 @@ class _InfoCell extends StatelessWidget {
         children: [
           Text(
             label,
-            style: const TextStyle(
-              color: Color(0xFF8E8E93),
-              fontSize: 11,
-            ),
+            style: const TextStyle(color: Color(0xFF8E8E93), fontSize: 11),
           ),
           const SizedBox(height: 2),
           Text(
