@@ -2,8 +2,8 @@
 
 A modern, beautifully designed product catalog application built with Flutter. **Explore** demonstrates clean UI design principles with a modular architecture, dynamic search functionality, and intricate product detail views.
 
-<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/c2e69a38-8829-4da6-b3fa-fad6a678e264" />
-<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/ddaf1324-6fec-4e33-a73b-dc7f4efd2ff0" />
+<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/e8884acb-f1c6-472b-a22c-53923b08f153" />
+<img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/06c1e88f-ab53-4fe4-92f3-9116cba39822" />
 <img width="327" height="572" alt="Image" src="https://github.com/user-attachments/assets/4fcaee25-6d15-47b1-8f69-16112c242e09" />
 
 ## Project Structure
